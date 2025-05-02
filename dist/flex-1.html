@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Design</title>
+    <title>Understanding flex-1 and flex-auto</title>
     <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body class="m-0 p-0 box-border">
+    <h1 class="text-5xl text-center text-blue-800 md:text-7xl md:text-red-700">Using flex-1</h1>
     <div class="m-10">
         <div class="flex">
             <div class="flex-1 text-white text-xl bg-red-700 text-center md:text-3xl md:bg-green-950">01</div>
-            <div class="flex-1 text-white text-xl bg-blue-800 text-center md:text-3xl md:bg-red-700">02</div>
+            <div class="flex-1 text-white text-xl bg-yellow-500 text-center md:text-3xl md:bg-red-700">02</div>
             <div class="flex-1 text-white text-xl bg-green-950 text-center md:text-3xl md:bg-blue-800">03</div>
         </div>
     </div>
-    <div class="flex">
-        <div class="flex-auto bg-yellow-400">Short</div>
-        <div class="flex-auto bg-blue-400">This is a much longer content</div>
+    <h1 class="text-5xl text-center text-blue-800 md:text-7xl md:text-red-700">Using flex-auto</h1>
+    <div class="m-10">
+        <div class="flex">
+            <div class="flex-auto bg-green-950 text-white text-sm md:font-medium md:bg-yellow-500 md:text-red-700">Short</div>
+            <div class="flex-auto bg-red-700 text-white text-sm md:font-medium md:bg-green-950 md:text-white">A bit longer</div>
+            <div class="flex-auto bg-green-950 text-white text-sm md:font-medium md:bg-yellow-500 md:text-red-700">A bit longer than others</div>
+            <div class="flex-auto bg-red-700 text-white text-sm md:font-medium md:bg-green-950 md:text-white">A bit longer than all the others</div>
+            <div class="flex-auto bg-green-950 text-white text-sm md:font-medium md:bg-yellow-500 md:text-red-700">This is the longest of the them all so far</div>
+        </div>
+    </div>
+    <div class="m-10">
+        <div class="flex">
+            <div class="flex-auto bg-green-950 text-white text-sm md:font-medium md:bg-yellow-500 md:text-red-700">Equal content</div>
+            <div class="flex-auto bg-red-700 text-white text-sm md:font-medium md:bg-green-950 md:text-white">Equal content</div>
+            <div class="flex-auto bg-green-950 text-white text-sm md:font-medium md:bg-yellow-500 md:text-red-700">Equal content</div>
+            <div class="flex-auto bg-red-700 text-white text-sm md:font-medium md:bg-green-950 md:text-white">Equal content</div>
+            <div class="flex-auto bg-green-950 text-white text-sm md:font-medium md:bg-yellow-500 md:text-red-700">Equal content</div>
+        </div>
     </div>
 </body>
 </html>
